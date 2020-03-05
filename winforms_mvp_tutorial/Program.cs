@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winforms_mvp_tutorial.Modules.UsersModule;
 
 namespace winforms_mvp_tutorial
 {
@@ -16,7 +17,7 @@ namespace winforms_mvp_tutorial
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }
