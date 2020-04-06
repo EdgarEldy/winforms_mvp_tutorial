@@ -134,12 +134,93 @@
     <Compile Include="Models\user.cs">
       <DependentUpon>SimpleStoreModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.Designer.cs">
+      <DependentUpon>FormCategoriesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CategoriesModule\FormCategoriesOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CategoriesModule\FormCategoriesOption.Designer.cs">
+      <DependentUpon>FormCategoriesOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomersModule\FormCustomersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomersModule\FormCustomersDetails.Designer.cs">
+      <DependentUpon>FormCustomersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\CustomersModule\FormCustomersOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\CustomersModule\FormCustomersOption.Designer.cs">
+      <DependentUpon>FormCustomersOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrdersModule\FormOrdersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\OrdersModule\FormOrdersDetails.Designer.cs">
+      <DependentUpon>FormOrdersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\OrdersModule\FormOrdersOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\OrdersModule\FormOrdersOption.Designer.cs">
+      <DependentUpon>FormOrdersOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductsModule\FormProductsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductsModule\FormProductsDetails.Designer.cs">
+      <DependentUpon>FormProductsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProductsModule\FormProductsOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductsModule\FormProductsOption.Designer.cs">
+      <DependentUpon>FormProductsOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProfilesModule\FormProfilesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ProfilesModule\FormProfilesDetails.Designer.cs">
+      <DependentUpon>FormProfilesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ProfilesModule\FormProfilesOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ProfilesModule\FormProfilesOption.Designer.cs">
+      <DependentUpon>FormProfilesOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\UsersModule\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modules\UsersModule\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\UsersModule\FormUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\UsersModule\FormUserProfile.Designer.cs">
+      <DependentUpon>FormUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UsersModule\FormUsersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\UsersModule\FormUsersDetails.Designer.cs">
+      <DependentUpon>FormUsersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\UsersModule\FormUsersOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\UsersModule\FormUsersOption.Designer.cs">
+      <DependentUpon>FormUsersOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Presenters\CategoryPresenter.cs" />
     <Compile Include="Presenters\CustomerPresenter.cs" />
     <Compile Include="Presenters\OrderPresenter.cs" />
@@ -157,6 +238,36 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CategoriesModule\FormCategoriesDetails.resx">
+      <DependentUpon>FormCategoriesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CategoriesModule\FormCategoriesOption.resx">
+      <DependentUpon>FormCategoriesOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomersModule\FormCustomersDetails.resx">
+      <DependentUpon>FormCustomersDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\CustomersModule\FormCustomersOption.resx">
+      <DependentUpon>FormCustomersOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProductsModule\FormProductsDetails.resx">
+      <DependentUpon>FormProductsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProductsModule\FormProductsOption.resx">
+      <DependentUpon>FormProductsOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProfilesModule\FormProfilesDetails.resx">
+      <DependentUpon>FormProfilesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ProfilesModule\FormProfilesOption.resx">
+      <DependentUpon>FormProfilesOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UsersModule\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\UsersModule\FormUserProfile.resx">
+      <DependentUpon>FormUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -170,6 +281,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SimpleStoreModels.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="bin\Debug\winforms_mvp_tutorial.exe.config" />
     <None Include="Models\SimpleStoreModels.edmx.diagram">
       <DependentUpon>SimpleStoreModels.edmx</DependentUpon>
     </None>
@@ -192,13 +304,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modules\CategoriesModule\" />
-    <Folder Include="Modules\ClientsModule\" />
-    <Folder Include="Modules\CustomersModule\" />
-    <Folder Include="Modules\ProductsModule\" />
-    <Folder Include="Modules\ProfilesModule\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\winforms_mvp_tutorial.exe" />
+    <Content Include="bin\Debug\winforms_mvp_tutorial.pdb" />
     <Content Include="Models\SimpleStoreModels.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SimpleStoreModels.edmx</DependentUpon>
