@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winforms_mvp_tutorial.Modules.CategoriesModule;
+using winforms_mvp_tutorial.Modules.CustomersModule;
 
 namespace winforms_mvp_tutorial
 {
-    public partial class Dashboard : Form
+    public partial class Dashboard : MetroFramework.Forms.MetroForm
     {
         public Dashboard()
         {
             InitializeComponent();
+        }
+
+        private void listOfCustomersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fcd= new FormCustomersDetails();
+            fcd.Show();
+        }
+
+        private void listOfProductsCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
