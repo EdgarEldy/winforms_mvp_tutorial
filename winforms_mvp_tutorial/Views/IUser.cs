@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace winforms_mvp_tutorial.Views
 {
-    interface IUser
+    public interface IUser
     {
+        string tbxUsername { get; set; }
+        string tbxPwd { get; set; }
     }
 }
