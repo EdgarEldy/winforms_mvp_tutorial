@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using winforms_mvp_tutorial.Models;
 using winforms_mvp_tutorial.Views;
 
@@ -33,6 +34,25 @@ namespace winforms_mvp_tutorial.Presenters
             cat.cat_name = ICat.tbxCatName;
             db.categories.Add(cat);
             db.SaveChanges();
+        }
+
+        public DataGridView showCategories(ICategory view)
+        {
+            ICat = view;
+            var result = db.categories.ToList();
+            foreach (var item in result)
+            {
+                int n = ICat.dgvCategoriesDetails.Rows.Add();
+                ICat.dgvCategoriesDetails.Rows[n].Cells[0].Value = item.cat_id;
+                ICat.dgvCategoriesDetails.Rows[n].Cells[1].Value = item.cat_name;
+            }
+
+            if (ICat.dgvCategoriesDetails.Rows.Count > 0)
+            {
+                ICat.dgvCategoriesDetails.ClearSelection();
+            }
+
+            return ICat.dgvCategoriesDetails;
         }
     }
 }
