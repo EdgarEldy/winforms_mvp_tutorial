@@ -134,6 +134,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnClose);
+            this.MaximizeBox = false;
             this.Name = "FormCategoriesOption";
             this.Text = "FormCategoriesOption";
             this.groupBox1.ResumeLayout(false);
