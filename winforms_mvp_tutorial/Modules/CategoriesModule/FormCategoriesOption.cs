@@ -12,6 +12,20 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
 {
     public partial class FormCategoriesOption : MetroFramework.Forms.MetroForm
     {
+        #region FormCategoriesOption singleton
+        private static FormCategoriesOption _instance;
+        public static FormCategoriesOption Instance
+        {
+            get
+            {
+                if (_instance == null || _instance.IsDisposed)
+                {
+                    _instance = new FormCategoriesOption();
+                }
+                return _instance;
+            }
+        } 
+        #endregion
         public FormCategoriesOption()
         {
             InitializeComponent();
