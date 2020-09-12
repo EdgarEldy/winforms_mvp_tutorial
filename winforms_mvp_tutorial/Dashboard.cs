@@ -24,10 +24,5 @@ namespace winforms_mvp_tutorial
             var fcd= new FormCustomersDetails();
             fcd.Show();
         }
-
-        private void listOfProductsCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
