@@ -31,7 +31,7 @@ namespace winforms_mvp_tutorial.Presenters
         public void insertCategory(ICategory view)
         {
             ICat = view;
-            cat.cat_name = ICat.tbxCatName;
+            cat.category_name = ICat.tbxCatName;
             db.categories.Add(cat);
             db.SaveChanges();
         }
@@ -44,7 +44,7 @@ namespace winforms_mvp_tutorial.Presenters
             {
                 int n = ICat.dgvCategoriesDetails.Rows.Add();
                 ICat.dgvCategoriesDetails.Rows[n].Cells[0].Value = item.id;
-                ICat.dgvCategoriesDetails.Rows[n].Cells[1].Value = item.cat_name;
+                ICat.dgvCategoriesDetails.Rows[n].Cells[1].Value = item.category_name;
             }
 
             if (ICat.dgvCategoriesDetails.Rows.Count > 0)
