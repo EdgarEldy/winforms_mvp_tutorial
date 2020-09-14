@@ -30,16 +30,16 @@ namespace winforms_mvp_tutorial.Presenters
             var result = (from p in _db.profiles
                     join u in _db.users
                         on p.id equals u.profile_id
-                    where (u.username == _user.tbxUsername && u.pwd == _user.tbxPwd)
+                    where (u.username == _user.tbxUsername && u.password == _user.tbxPwd)
                     select new
                     {
                         profile_name = p.profile_name,
                         username = u.username,
-                        pwd = u.pwd
+                        password = u.password
                     })
                 .ToList()
                 .FirstOrDefault();
-            if (result == null || _user.tbxUsername != result.username || _user.tbxPwd != result.pwd) return false;
+            if (result == null || _user.tbxUsername != result.username || _user.tbxPwd != result.password) return false;
             GeTUsername = result.username;
             return true;
         }
