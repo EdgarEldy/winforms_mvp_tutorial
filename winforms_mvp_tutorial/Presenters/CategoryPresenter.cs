@@ -43,7 +43,7 @@ namespace winforms_mvp_tutorial.Presenters
             foreach (var item in result)
             {
                 int n = ICat.dgvCategoriesDetails.Rows.Add();
-                ICat.dgvCategoriesDetails.Rows[n].Cells[0].Value = item.cat_id;
+                ICat.dgvCategoriesDetails.Rows[n].Cells[0].Value = item.id;
                 ICat.dgvCategoriesDetails.Rows[n].Cells[1].Value = item.cat_name;
             }
 
