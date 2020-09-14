@@ -29,7 +29,7 @@ namespace winforms_mvp_tutorial.Presenters
             _user = view;
             var result = (from p in _db.profiles
                     join u in _db.users
-                        on p.profile_id equals u.fk_profile_id
+                        on p.id equals u.profile_id
                     where (u.username == _user.tbxUsername && u.pwd == _user.tbxPwd)
                     select new
                     {
