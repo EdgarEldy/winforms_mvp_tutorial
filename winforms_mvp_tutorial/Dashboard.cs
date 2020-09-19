@@ -18,5 +18,11 @@ namespace winforms_mvp_tutorial
         {
             InitializeComponent();
         }
+
+        private void ListOfCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fcatd = new FormCategoriesDetails();
+            fcatd.Show();
+        }
     }
 }
