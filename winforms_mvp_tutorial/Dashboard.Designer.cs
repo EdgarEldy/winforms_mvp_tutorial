@@ -44,7 +44,15 @@
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -167,17 +175,93 @@
             this.listOfCategoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listOfCategoriesToolStripMenuItem.Text = "List of categories";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.metroTile6);
+            this.panel1.Controls.Add(this.metroTile5);
+            this.panel1.Controls.Add(this.metroTile4);
+            this.panel1.Controls.Add(this.metroTile3);
+            this.panel1.Controls.Add(this.metroTile2);
+            this.panel1.Controls.Add(this.metroTile1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(20, 84);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 446);
+            this.panel1.TabIndex = 1;
+            // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Location = new System.Drawing.Point(3, 3);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(194, 65);
+            this.metroTile1.TabIndex = 0;
+            this.metroTile1.Text = "Dashoboard";
+            this.metroTile1.UseSelectable = true;
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Location = new System.Drawing.Point(3, 74);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(194, 65);
+            this.metroTile2.TabIndex = 0;
+            this.metroTile2.Text = "Orders";
+            this.metroTile2.UseSelectable = true;
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Location = new System.Drawing.Point(3, 145);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(194, 65);
+            this.metroTile3.TabIndex = 0;
+            this.metroTile3.Text = "Customers";
+            this.metroTile3.UseSelectable = true;
+            // 
+            // metroTile4
+            // 
+            this.metroTile4.ActiveControl = null;
+            this.metroTile4.Location = new System.Drawing.Point(3, 216);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(194, 65);
+            this.metroTile4.TabIndex = 0;
+            this.metroTile4.Text = "Products";
+            this.metroTile4.UseSelectable = true;
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Location = new System.Drawing.Point(3, 287);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(194, 65);
+            this.metroTile5.TabIndex = 0;
+            this.metroTile5.Text = "Configuration";
+            this.metroTile5.UseSelectable = true;
+            // 
+            // metroTile6
+            // 
+            this.metroTile6.ActiveControl = null;
+            this.metroTile6.Location = new System.Drawing.Point(3, 358);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(194, 65);
+            this.metroTile6.TabIndex = 0;
+            this.metroTile6.Text = "Logout";
+            this.metroTile6.UseSelectable = true;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 550);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Dashboard";
             this.Text = "Dashboard";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +285,12 @@
         private System.Windows.Forms.ToolStripMenuItem userProfilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listOfCategoriesToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroTile metroTile5;
+        private MetroFramework.Controls.MetroTile metroTile4;
+        private MetroFramework.Controls.MetroTile metroTile3;
+        private MetroFramework.Controls.MetroTile metroTile2;
+        private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile metroTile6;
     }
 }
