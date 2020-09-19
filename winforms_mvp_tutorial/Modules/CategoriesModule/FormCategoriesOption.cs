@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winforms_mvp_tutorial.Presenters;
 using winforms_mvp_tutorial.Views;
 
 namespace winforms_mvp_tutorial.Modules.CategoriesModule
 {
     public partial class FormCategoriesOption : MetroFramework.Forms.MetroForm,ICategory
     {
+        private event EventHandler btnSaveClick;
         #region FormCategoriesOption singleton
         private static FormCategoriesOption _instance;
         public static FormCategoriesOption Instance
@@ -45,7 +47,14 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            CategoryPresenter.Instance.insertCategory(this);
+            btnSaveClick?.Invoke(sender,e);
+            Close();
         }
     }
 }
