@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winforms_mvp_tutorial.Presenters;
 using winforms_mvp_tutorial.Views;
 
 namespace winforms_mvp_tutorial.Modules.CategoriesModule
@@ -16,6 +17,14 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
         public FormCategoriesDetails()
         {
             InitializeComponent();
+            CategoryPresenter.Instance.showCategories(this);
+            FormCategoriesOption.Instance.btnSaveClick += Instance_btnSaveClick;
+        }
+
+        private void Instance_btnSaveClick(object sender, EventArgs e)
+        {
+            dgvCategoriesDetails.Rows.Clear();
+            CategoryPresenter.Instance.showCategories(this);
         }
 
         #region ICategory interface implementation 
@@ -48,6 +57,11 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
         private void btnNew_Click(object sender, EventArgs e)
         {
             FormCategoriesOption.Instance.Show();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
