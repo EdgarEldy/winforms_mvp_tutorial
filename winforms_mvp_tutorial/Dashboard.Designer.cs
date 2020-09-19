@@ -150,7 +150,6 @@
             this.listOfCustomersToolStripMenuItem.Name = "listOfCustomersToolStripMenuItem";
             this.listOfCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listOfCustomersToolStripMenuItem.Text = "List of customers";
-            this.listOfCustomersToolStripMenuItem.Click += new System.EventHandler(this.listOfCustomersToolStripMenuItem_Click);
             // 
             // listOfProductsToolStripMenuItem
             // 
