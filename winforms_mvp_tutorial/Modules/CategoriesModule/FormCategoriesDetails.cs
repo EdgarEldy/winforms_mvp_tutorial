@@ -18,6 +18,7 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
             InitializeComponent();
         }
 
+        #region ICategory interface implementation 
         public ComboBox cbxCategories
         {
             get
@@ -39,10 +40,10 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
             }
         }
 
-        DataGridView ICategory.dgvCategoriesDetails
-        {
-            get { return dgvCategoriesDetails; }
-        }
+        DataGridView ICategory.dgvCategoriesDetails => dgvCategoriesDetails;
+        
+        #endregion
+        
 
         private void btnNew_Click(object sender, EventArgs e)
         {
