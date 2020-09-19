@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winforms_mvp_tutorial.Views;
 
 namespace winforms_mvp_tutorial.Modules.CategoriesModule
 {
-    public partial class FormCategoriesOption : MetroFramework.Forms.MetroForm
+    public partial class FormCategoriesOption : MetroFramework.Forms.MetroForm,ICategory
     {
         #region FormCategoriesOption singleton
         private static FormCategoriesOption _instance;
@@ -24,8 +25,19 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
                 }
                 return _instance;
             }
-        } 
+        }
+
         #endregion
+
+        #region ICategory Interface implementation using expression body
+        string ICategory.tbxCatName { get => tbxCatName.Text; set => tbxCatName.Text = value; }
+
+        public DataGridView dgvCategoriesDetails => throw new NotImplementedException();
+
+        public ComboBox cbxCategories => throw new NotImplementedException();
+
+        #endregion
+       
         public FormCategoriesOption()
         {
             InitializeComponent();
