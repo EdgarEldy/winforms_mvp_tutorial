@@ -43,6 +43,7 @@
             this.listOfProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listOfCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,6 +143,8 @@
             // 
             // listOfProductsToolStripMenuItem
             // 
+            this.listOfProductsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listOfCategoriesToolStripMenuItem});
             this.listOfProductsToolStripMenuItem.Name = "listOfProductsToolStripMenuItem";
             this.listOfProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listOfProductsToolStripMenuItem.Text = "List of products";
@@ -157,6 +160,12 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // listOfCategoriesToolStripMenuItem
+            // 
+            this.listOfCategoriesToolStripMenuItem.Name = "listOfCategoriesToolStripMenuItem";
+            this.listOfCategoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listOfCategoriesToolStripMenuItem.Text = "List of categories";
             // 
             // Dashboard
             // 
@@ -191,5 +200,6 @@
         private System.Windows.Forms.ToolStripMenuItem listOfUsersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userProfilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listOfCategoriesToolStripMenuItem;
     }
 }
