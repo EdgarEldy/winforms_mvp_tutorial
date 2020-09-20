@@ -14,7 +14,7 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
 {
     public partial class FormCategoriesOption : MetroFramework.Forms.MetroForm,ICategory
     {
-        private event EventHandler btnSaveClick;
+        public event EventHandler btnSaveClick;
         #region FormCategoriesOption singleton
         private static FormCategoriesOption _instance;
         public static FormCategoriesOption Instance
