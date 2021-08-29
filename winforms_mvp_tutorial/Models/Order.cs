@@ -32,5 +32,7 @@ namespace winforms_mvp_tutorial.Models
         public DateTime UpdatedAt { get; set; }
 
         public virtual Customer Customer { get; set; }
+
+        public virtual Product Product { get; set; }
     }
 }
