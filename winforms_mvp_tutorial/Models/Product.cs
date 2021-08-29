@@ -14,7 +14,7 @@ namespace winforms_mvp_tutorial.Models
         // Constructor
         public Product()
         {
-
+            Orders = new HashSet<Order>();
         }
 
         // Properties
@@ -33,5 +33,7 @@ namespace winforms_mvp_tutorial.Models
         public DateTime UpdatedAt { get; set; }
 
         public virtual Category Category { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

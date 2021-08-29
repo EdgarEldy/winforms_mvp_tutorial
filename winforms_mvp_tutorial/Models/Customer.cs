@@ -14,7 +14,7 @@ namespace winforms_mvp_tutorial.Models
         // Constructor
         public Customer()
         {
-
+            Orders = new HashSet<Order>();
         }
 
         public int Id { get; set; }
@@ -42,5 +42,7 @@ namespace winforms_mvp_tutorial.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }
