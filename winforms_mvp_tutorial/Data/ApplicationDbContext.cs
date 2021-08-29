@@ -9,5 +9,10 @@ namespace winforms_mvp_tutorial.Data
 {
     class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext()
+            : base("name=ApplicationDbContext")
+        {
+
+        }
     }
 }
