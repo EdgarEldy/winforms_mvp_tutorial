@@ -4,7 +4,6 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using winforms_mvp_tutorial.Models;
 
 namespace winforms_mvp_tutorial.Data
 {
@@ -15,8 +14,5 @@ namespace winforms_mvp_tutorial.Data
         {
 
         }
-
-        // Category
-        public virtual DbSet<Category> Categories { get; set; }
     }
 }
