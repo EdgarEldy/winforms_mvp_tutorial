@@ -18,5 +18,8 @@ namespace winforms_mvp_tutorial.Data
 
         // Category
         public virtual DbSet<Category> Categories { get; set; }
+
+        // Products
+        public virtual DbSet<Product> Products { get; set; }
     }
 }
