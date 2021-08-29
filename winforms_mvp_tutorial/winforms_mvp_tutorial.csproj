@@ -109,39 +109,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\category.cs">
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\customer.cs">
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\order.cs">
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\product.cs">
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\profile.cs">
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SimpleStoreModels.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SimpleStoreModels.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SimpleStoreModels.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SimpleStoreModels.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SimpleStoreModels.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\user.cs">
-      <DependentUpon>SimpleStoreModels.tt</DependentUpon>
-    </Compile>
     <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,13 +253,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="bin\Debug\winforms_mvp_tutorial.exe.config" />
-    <EntityDeploy Include="Models\SimpleStoreModels.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SimpleStoreModels.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Models\SimpleStoreModels.edmx.diagram">
-      <DependentUpon>SimpleStoreModels.edmx</DependentUpon>
-    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -313,20 +273,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\winforms_mvp_tutorial.exe" />
     <Content Include="bin\Debug\winforms_mvp_tutorial.pdb" />
-    <Content Include="Models\SimpleStoreModels.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SimpleStoreModels.edmx</DependentUpon>
-      <LastGenOutput>SimpleStoreModels.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\SimpleStoreModels.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SimpleStoreModels.edmx</DependentUpon>
-      <LastGenOutput>SimpleStoreModels.cs</LastGenOutput>
-    </Content>
     <Content Include="simple_store_db.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
