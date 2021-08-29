@@ -15,5 +15,10 @@ namespace winforms_mvp_tutorial.Models
         {
 
         }
+
+        // Properties
+        public int Id { get; set; }
+
+        public string CategoryName { get; set; }
     }
 }
