@@ -278,13 +278,6 @@
   <ItemGroup>
     <Content Include="bin\Debug\winforms_mvp_tutorial.exe" />
     <Content Include="bin\Debug\winforms_mvp_tutorial.pdb" />
-    <Content Include="simple_store_db.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="simple_store_db_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>simple_store_db.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
