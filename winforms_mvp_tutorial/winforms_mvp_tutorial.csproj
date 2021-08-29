@@ -130,6 +130,10 @@
     <Compile Include="Migrations\202108291917280_create_roles_table.designer.cs">
       <DependentUpon>202108291917280_create_roles_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108291918467_create_users_table.cs" />
+    <Compile Include="Migrations\202108291918467_create_users_table.designer.cs">
+      <DependentUpon>202108291918467_create_users_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -255,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108291917280_create_roles_table.resx">
       <DependentUpon>202108291917280_create_roles_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291918467_create_users_table.resx">
+      <DependentUpon>202108291918467_create_users_table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\CategoriesModule\FormCategoriesDetails.resx">
       <DependentUpon>FormCategoriesDetails.cs</DependentUpon>
