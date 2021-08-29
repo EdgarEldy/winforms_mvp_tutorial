@@ -109,6 +109,38 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\ApplicationDbContext.cs" />
+    <Compile Include="Migrations\202108291858192_create_categories_table.cs" />
+    <Compile Include="Migrations\202108291858192_create_categories_table.designer.cs">
+      <DependentUpon>202108291858192_create_categories_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108291912319_create_products_table.cs" />
+    <Compile Include="Migrations\202108291912319_create_products_table.designer.cs">
+      <DependentUpon>202108291912319_create_products_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108291914496_create_customers_table.cs" />
+    <Compile Include="Migrations\202108291914496_create_customers_table.designer.cs">
+      <DependentUpon>202108291914496_create_customers_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108291916133_create_orders_table.cs" />
+    <Compile Include="Migrations\202108291916133_create_orders_table.designer.cs">
+      <DependentUpon>202108291916133_create_orders_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108291917280_create_roles_table.cs" />
+    <Compile Include="Migrations\202108291917280_create_roles_table.designer.cs">
+      <DependentUpon>202108291917280_create_roles_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108291918467_create_users_table.cs" />
+    <Compile Include="Migrations\202108291918467_create_users_table.designer.cs">
+      <DependentUpon>202108291918467_create_users_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,6 +244,24 @@
     <Compile Include="Views\IUser.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291858192_create_categories_table.resx">
+      <DependentUpon>202108291858192_create_categories_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291912319_create_products_table.resx">
+      <DependentUpon>202108291912319_create_products_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291914496_create_customers_table.resx">
+      <DependentUpon>202108291914496_create_customers_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291916133_create_orders_table.resx">
+      <DependentUpon>202108291916133_create_orders_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291917280_create_roles_table.resx">
+      <DependentUpon>202108291917280_create_roles_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291918467_create_users_table.resx">
+      <DependentUpon>202108291918467_create_users_table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\CategoriesModule\FormCategoriesDetails.resx">
       <DependentUpon>FormCategoriesDetails.cs</DependentUpon>
