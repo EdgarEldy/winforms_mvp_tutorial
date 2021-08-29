@@ -111,6 +111,7 @@
     </Compile>
     <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.cs">
       <SubType>Form</SubType>
