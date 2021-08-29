@@ -14,7 +14,7 @@ namespace winforms_mvp_tutorial.Models
         // Constructor
         public Category()
         {
-
+            Products = new HashSet<Product>();
         }
 
         // Properties
@@ -23,5 +23,7 @@ namespace winforms_mvp_tutorial.Models
         [Required]
         [StringLength(50)]
         public string CategoryName { get; set; }
+
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
