@@ -14,18 +14,20 @@ namespace winforms_mvp_tutorial.Models
         // Constructor
         public Role()
         {
-
+            Roles = new HashSet<Role>();
         }
 
         // Properties
         public int Id { get; set; }
 
         [Required]
-        [StringLength(50]
+        [StringLength(50)]
         public string RoleName { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        public virtual ICollection<Role> Roles { get; set; }
     }
 }
