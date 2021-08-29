@@ -114,6 +114,10 @@
     <Compile Include="Migrations\202108291858192_create_categories_table.designer.cs">
       <DependentUpon>202108291858192_create_categories_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108291912319_create_products_table.cs" />
+    <Compile Include="Migrations\202108291912319_create_products_table.designer.cs">
+      <DependentUpon>202108291912319_create_products_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -227,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202108291858192_create_categories_table.resx">
       <DependentUpon>202108291858192_create_categories_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108291912319_create_products_table.resx">
+      <DependentUpon>202108291912319_create_products_table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\CategoriesModule\FormCategoriesDetails.resx">
       <DependentUpon>FormCategoriesDetails.cs</DependentUpon>
