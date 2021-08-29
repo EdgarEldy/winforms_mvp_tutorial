@@ -30,5 +30,8 @@ namespace winforms_mvp_tutorial.Data
 
         // Roles
         public virtual DbSet<Role> Roles { get; set; }
+
+        // Users
+        public virtual DbSet<User> Users { get; set; }
     }
 }
