@@ -115,6 +115,7 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.cs">
       <SubType>Form</SubType>
     </Compile>
