@@ -21,8 +21,5 @@ namespace winforms_mvp_tutorial.Data
 
         // Products
         public virtual DbSet<Product> Products { get; set; }
-
-        // Customers
-        public virtual DbSet<Customer> Customers { get; set; }
     }
 }
