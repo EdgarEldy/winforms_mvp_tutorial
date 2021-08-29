@@ -109,6 +109,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Modules\CategoriesModule\FormCategoriesDetails.cs">
       <SubType>Form</SubType>
