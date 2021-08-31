@@ -17,14 +17,14 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
         public FormCategoriesDetails()
         {
             InitializeComponent();
-            CategoryPresenter.Instance.showCategories(this);
+            CategoryPresenter.Instance.ShowCategories(this);
             FormCategoriesOption.Instance.btnSaveClick += Instance_btnSaveClick;
         }
 
         private void Instance_btnSaveClick(object sender, EventArgs e)
         {
             dgvCategoriesDetails.Rows.Clear();
-            CategoryPresenter.Instance.showCategories(this);
+            CategoryPresenter.Instance.ShowCategories(this);
         }
 
         #region ICategory interface implementation 

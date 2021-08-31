@@ -29,7 +29,7 @@ namespace winforms_mvp_tutorial.Presenters
 
         #endregion
 
-        public void insertCategory(ICategory view)
+        public void InsertCategory(ICategory view)
         {
             ICat = view;
             category.CategoryName = ICat.tbxCatName;
@@ -37,7 +37,7 @@ namespace winforms_mvp_tutorial.Presenters
             db.SaveChanges();
         }
 
-        public DataGridView showCategories(ICategory view)
+        public DataGridView ShowCategories(ICategory view)
         {
             ICat = view;
             var result = db.Categories.ToList();

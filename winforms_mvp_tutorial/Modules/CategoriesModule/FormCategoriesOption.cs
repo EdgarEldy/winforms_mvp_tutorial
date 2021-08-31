@@ -52,7 +52,7 @@ namespace winforms_mvp_tutorial.Modules.CategoriesModule
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            CategoryPresenter.Instance.insertCategory(this);
+            CategoryPresenter.Instance.InsertCategory(this);
             btnSaveClick?.Invoke(sender,e);
             Close();
         }
