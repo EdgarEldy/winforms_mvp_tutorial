@@ -32,20 +32,20 @@ namespace winforms_mvp_tutorial.Presenters
         public void insertCategory(ICategory view)
         {
             ICat = view;
-            cat.category_name = ICat.tbxCatName;
-            db.categories.Add(cat);
+            category.CategoryName = ICat.tbxCatName;
+            db.Categories.Add(category);
             db.SaveChanges();
         }
 
         public DataGridView showCategories(ICategory view)
         {
             ICat = view;
-            var result = db.categories.ToList();
+            var result = db.Categories.ToList();
             foreach (var item in result)
             {
                 int n = ICat.dgvCategoriesDetails.Rows.Add();
-                ICat.dgvCategoriesDetails.Rows[n].Cells[0].Value = item.id;
-                ICat.dgvCategoriesDetails.Rows[n].Cells[1].Value = item.category_name;
+                ICat.dgvCategoriesDetails.Rows[n].Cells[0].Value = item.Id;
+                ICat.dgvCategoriesDetails.Rows[n].Cells[1].Value = item.CategoryName;
             }
 
             if (ICat.dgvCategoriesDetails.Rows.Count > 0)
