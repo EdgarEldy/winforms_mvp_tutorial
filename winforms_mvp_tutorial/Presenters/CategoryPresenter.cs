@@ -14,7 +14,7 @@ namespace winforms_mvp_tutorial.Presenters
     {
         ApplicationDbContext db = new ApplicationDbContext();
         private ICategory ICat;
-        category cat =new category();
+        Category category = new Category();
 
         public CategoryPresenter()
         {
