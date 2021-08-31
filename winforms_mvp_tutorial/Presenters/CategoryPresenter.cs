@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using winforms_mvp_tutorial.Data;
 using winforms_mvp_tutorial.Models;
 using winforms_mvp_tutorial.Views;
 
@@ -11,7 +12,7 @@ namespace winforms_mvp_tutorial.Presenters
 {
     class CategoryPresenter
     {
-        simple_store_dbEntities db = new simple_store_dbEntities();
+        ApplicationDbContext db = new ApplicationDbContext();
         private ICategory ICat;
         category cat =new category();
 
