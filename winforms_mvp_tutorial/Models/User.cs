@@ -20,7 +20,7 @@ namespace winforms_mvp_tutorial.Models
         // Properties
         public int Id { get; set; }
 
-        public int RoleId { get; set; }
+        public int ProfileId { get; set; }
 
         [Required]
         [StringLength(50)]
