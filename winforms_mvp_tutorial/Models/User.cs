@@ -40,6 +40,6 @@ namespace winforms_mvp_tutorial.Models
 
         public DateTime UpdatedAt { get; set; }
 
-        public virtual Role Role { get; set; }
+        public virtual Profile Profile { get; set; }
     }
 }
