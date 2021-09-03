@@ -28,8 +28,8 @@ namespace winforms_mvp_tutorial.Data
         // Orders
         public virtual DbSet<Order> Orders { get; set; }
 
-        // Roles
-        public virtual DbSet<Role> Roles { get; set; }
+        // Profiles
+        public virtual DbSet<Profile> Profiles { get; set; }
 
         // Users
         public virtual DbSet<User> Users { get; set; }
