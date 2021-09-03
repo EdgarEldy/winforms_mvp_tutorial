@@ -22,7 +22,7 @@ namespace winforms_mvp_tutorial.Models
 
         [Required]
         [StringLength(50)]
-        public string RoleName { get; set; }
+        public string ProfileName { get; set; }
 
         // Timestamps
         public DateTime CreatedAt { get; set; }
