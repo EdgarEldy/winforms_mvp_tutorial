@@ -8,38 +8,26 @@ using System.Threading.Tasks;
 
 namespace winforms_mvp_tutorial.Models
 {
-    [Table("users")]
-    class User
+    [Table("profiles")]
+    class Profile
     {
         // Constructor
-        public User()
+        public Profile()
         {
-
+            Users = new HashSet<User>();
         }
 
         // Properties
         public int Id { get; set; }
 
-        public int ProfileId { get; set; }
-
         [Required]
         [StringLength(50)]
-        public string FistName { get; set; }
+        public string ProfileName { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        public string LastName { get; set; }
-
-        [StringLength(50)]
-        public string Email { get; set; }
-
-        [StringLength(255)]
-        public string Password { get; set; }
-
+        // Timestamps
         public DateTime CreatedAt { get; set; }
-
         public DateTime UpdatedAt { get; set; }
 
-        public virtual Profile Profile { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

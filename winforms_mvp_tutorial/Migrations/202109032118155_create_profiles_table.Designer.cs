@@ -7,13 +7,13 @@ namespace winforms_mvp_tutorial.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class create_roles_table : IMigrationMetadata
+    public sealed partial class create_profiles_table : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(create_roles_table));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(create_profiles_table));
         
         string IMigrationMetadata.Id
         {
-            get { return "202108291917280_create_roles_table"; }
+            get { return "202109032118155_create_profiles_table"; }
         }
         
         string IMigrationMetadata.Source
