@@ -109,18 +109,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\CustomersModule\FormCustomersDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\CustomersModule\FormCustomersDetails.Designer.cs">
-      <DependentUpon>FormCustomersDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\CustomersModule\FormCustomersOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\CustomersModule\FormCustomersOption.Designer.cs">
-      <DependentUpon>FormCustomersOption.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modules\OrdersModule\FormOrdersDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,12 +182,6 @@
     <Compile Include="Views\IUser.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\CustomersModule\FormCustomersDetails.resx">
-      <DependentUpon>FormCustomersDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\CustomersModule\FormCustomersOption.resx">
-      <DependentUpon>FormCustomersOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ProductsModule\FormProductsDetails.resx">
       <DependentUpon>FormProductsDetails.cs</DependentUpon>
