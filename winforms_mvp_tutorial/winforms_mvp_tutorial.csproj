@@ -109,18 +109,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\ProfilesModule\FormProfilesDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\ProfilesModule\FormProfilesDetails.Designer.cs">
-      <DependentUpon>FormProfilesDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\ProfilesModule\FormProfilesOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\ProfilesModule\FormProfilesOption.Designer.cs">
-      <DependentUpon>FormProfilesOption.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modules\UsersModule\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,12 +146,6 @@
     <Compile Include="Views\IUser.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ProfilesModule\FormProfilesDetails.resx">
-      <DependentUpon>FormProfilesDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ProfilesModule\FormProfilesOption.resx">
-      <DependentUpon>FormProfilesOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\UsersModule\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
