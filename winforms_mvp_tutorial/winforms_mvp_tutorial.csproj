@@ -109,30 +109,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\UsersModule\FormLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormUserProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormUserProfile.Designer.cs">
-      <DependentUpon>FormUserProfile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormUsersDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormUsersDetails.Designer.cs">
-      <DependentUpon>FormUsersDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormUsersOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\UsersModule\FormUsersOption.Designer.cs">
-      <DependentUpon>FormUsersOption.cs</DependentUpon>
-    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -146,12 +122,6 @@
     <Compile Include="Views\IUser.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\UsersModule\FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\UsersModule\FormUserProfile.resx">
-      <DependentUpon>FormUserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -183,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="Modules" />
     <Folder Include="Presenters" />
   </ItemGroup>
   <ItemGroup>
