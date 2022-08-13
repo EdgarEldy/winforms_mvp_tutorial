@@ -109,18 +109,6 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\OrdersModule\FormOrdersDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\OrdersModule\FormOrdersDetails.Designer.cs">
-      <DependentUpon>FormOrdersDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\OrdersModule\FormOrdersOption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modules\OrdersModule\FormOrdersOption.Designer.cs">
-      <DependentUpon>FormOrdersOption.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modules\ProductsModule\FormProductsDetails.cs">
       <SubType>Form</SubType>
     </Compile>
