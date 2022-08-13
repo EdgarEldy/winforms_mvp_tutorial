@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using winforms_mvp_tutorial.Modules.CategoriesModule;
-using winforms_mvp_tutorial.Modules.CustomersModule;
 
 namespace winforms_mvp_tutorial
 {
@@ -17,12 +15,6 @@ namespace winforms_mvp_tutorial
         public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void ListOfCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var fcatd = new FormCategoriesDetails();
-            fcatd.Show();
         }
     }
 }
