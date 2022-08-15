@@ -109,6 +109,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data\ApplicationDbContext.cs" />
     <Compile Include="Migrations\202108291858192_create_categories_table.cs" />
     <Compile Include="Migrations\202108291858192_create_categories_table.Designer.cs" />
     <Compile Include="Migrations\202108291912319_create_products_table.cs" />
@@ -173,9 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="Modules" />
-    <Folder Include="Presenters" />
-    <Folder Include="Views" />
+    <Folder Include="Modules\" />
+    <Folder Include="Presenters\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\winforms_mvp_tutorial.exe" />
