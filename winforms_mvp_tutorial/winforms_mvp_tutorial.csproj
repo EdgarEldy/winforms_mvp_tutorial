@@ -147,7 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="Presenters" />
     <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
