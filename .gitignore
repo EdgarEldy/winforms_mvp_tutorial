@@ -243,3 +243,6 @@ ModelManifest.xml
 
 # .idea files
 .idea
+
+# Migrations folder
+Migrations
