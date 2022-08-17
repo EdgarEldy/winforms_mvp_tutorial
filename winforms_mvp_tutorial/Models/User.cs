@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace winforms_mvp_tutorial.Models
 {
-    [Table("users")]
+    [Table("Users")]
     class User
     {
         // Constructor

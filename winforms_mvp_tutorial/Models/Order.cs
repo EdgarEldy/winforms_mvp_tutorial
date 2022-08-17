@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace winforms_mvp_tutorial.Models
 {
-    [Table("orders")]
+    [Table("Orders")]
     class Order
     {
         // Constructor
