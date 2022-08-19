@@ -1,4 +1,6 @@
-﻿namespace winforms_mvp_tutorial.Migrations
+﻿using winforms_mvp_tutorial.Models;
+
+namespace winforms_mvp_tutorial.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -18,6 +20,23 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
+
+            // Categories seeder
+            context.Categories.AddOrUpdate(x => x.Id,
+                new Category()
+                {
+                    Id = 1,
+                    CategoryName = "Lemonades",
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                },
+                new Category()
+                {
+                    Id = 2,
+                    CategoryName = "Alcohols",
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                });
         }
     }
 }
