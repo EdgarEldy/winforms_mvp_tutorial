@@ -25,7 +25,7 @@ namespace winforms_mvp_tutorial.Models
 
         public int Quantity { get; set; }
 
-        public double GrandTotal { get; set; }
+        public double Total { get; set; }
 
         public DateTime? CreatedAt { get; set; }
 
