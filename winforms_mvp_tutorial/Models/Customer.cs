@@ -21,7 +21,7 @@ namespace winforms_mvp_tutorial.Models
 
         [Required]
         [StringLength(50)]
-        public string FistName { get; set; }
+        public string FirstName { get; set; }
 
         [Required]
         [StringLength(50)]
