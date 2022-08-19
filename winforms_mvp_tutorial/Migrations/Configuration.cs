@@ -37,6 +37,45 @@ namespace winforms_mvp_tutorial.Migrations
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now
                 });
+
+            // Products seeder
+            context.Products.AddOrUpdate(x => x.Id,
+                new Product()
+                {
+                    Id = 1,
+                    CategoryId = 1,
+                    ProductName = "Citron",
+                    UnitPrice = 800,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                },
+                new Product()
+                {
+                    Id = 2,
+                    CategoryId = 1,
+                    ProductName = "Coca Cola",
+                    UnitPrice = 800,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                },
+                new Product()
+                {
+                    Id = 3,
+                    CategoryId = 2,
+                    ProductName = "Amstel 50 cl",
+                    UnitPrice = 1800,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                },
+                new Product()
+                {
+                    Id = 4,
+                    CategoryId = 2,
+                    ProductName = "Primus 50 cl",
+                    UnitPrice = 1500,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                });
         }
     }
 }
