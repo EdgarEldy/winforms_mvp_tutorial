@@ -27,9 +27,9 @@ namespace winforms_mvp_tutorial.Models
 
         public double GrandTotal { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
         public virtual Customer Customer { get; set; }
 

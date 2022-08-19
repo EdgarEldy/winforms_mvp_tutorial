@@ -28,9 +28,9 @@ namespace winforms_mvp_tutorial.Models
 
         public double UnitPrice { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
         public virtual Category Category { get; set; }
 

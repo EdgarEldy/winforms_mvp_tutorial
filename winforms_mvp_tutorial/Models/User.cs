@@ -36,9 +36,9 @@ namespace winforms_mvp_tutorial.Models
         [StringLength(255)]
         public string Password { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
 
         public virtual Profile Profile { get; set; }
     }
