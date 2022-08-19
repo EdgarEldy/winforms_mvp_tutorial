@@ -101,6 +101,29 @@ namespace winforms_mvp_tutorial.Migrations
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now,
                 });
+
+            // Order seeders
+            context.Orders.AddOrUpdate(x => x.Id,
+                new Order()
+                {
+                    Id = 1,
+                    CustomerId = 1,
+                    ProductId = 1,
+                    Quantity = 2,
+                    Total = 1600,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                },
+                new Order()
+                {
+                    Id = 2,
+                    CustomerId = 2,
+                    ProductId = 3,
+                    Quantity = 3,
+                    Total = 5400,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                });
         }
     }
 }
